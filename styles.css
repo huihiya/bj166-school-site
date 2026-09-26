@@ -513,14 +513,13 @@ ul, ol { list-style: none; }
   .pic-row .item { flex: 0 0 48%; }
 }
 
-/* ---------- “一六六蓝”政企蓝白配色 ----------
-   2024 年公开报道提到学校校庆视觉使用“一六六蓝”。
-   这里沿用原有政企布局，只替换强调色，不把未经核实的网络图片冒充校徽。 */
+/* ---------- 校徽蓝银政企蓝白配色 ----------
+   公开校徽图样显示为蓝色与银灰色；沿用原有政企布局，仅调整强调色。 */
 :root {
-  --school-blue: #155b96;
-  --school-blue-dark: #0b3f70;
-  --school-blue-deep: #08345c;
-  --school-blue-pale: #eaf3fb;
+  --school-blue: #205fc1;
+  --school-blue-dark: #174a98;
+  --school-blue-deep: #10366f;
+  --school-blue-pale: #edf4ff;
   --school-ink: #24445d;
 }
 body { background: #eef3f7; }
@@ -530,28 +529,21 @@ a:hover { color: var(--school-blue); }
 .topbar a { color: #dbeaf7; }
 .topbar .sep { color: #7da5c8; }
 .header {
-  background: linear-gradient(180deg, rgba(21,91,150,0) 0%, rgba(21,91,150,.07) 100%), #fff;
+  background: linear-gradient(180deg, rgba(32,95,193,0) 0%, rgba(32,95,193,.07) 100%), #fff;
   border-bottom-color: var(--school-blue);
 }
 .header .logo { position: relative; padding-left: 82px; }
 .header .logo::before {
-  content: "166";
+  content: "";
   position: absolute;
   left: 0;
   top: 2px;
   width: 62px;
   height: 62px;
-  border: 3px solid var(--school-blue);
+  border: 0;
   border-radius: 50%;
-  background: #fff;
-  color: var(--school-blue);
-  font-family: "Times New Roman", serif;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 56px;
-  letter-spacing: 0;
-  text-align: center;
-  box-shadow: inset 0 0 0 3px var(--school-blue-pale);
+  background: #fff url("images/school-emblem.jpg") center / contain no-repeat;
+  box-shadow: 0 0 0 3px #fff, 0 1px 5px rgba(16,54,111,.2);
 }
 .header .logo h1 { color: var(--school-blue); }
 .header .logo h1 span.badge { background: var(--school-blue); }
